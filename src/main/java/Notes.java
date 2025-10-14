@@ -5,28 +5,72 @@ class Notes {
 		// Bubble sort
 
 		int numArray[] = { 54, 5, 8, 2, 54, 78, 1, 0, 54 };
-		boolean swapped = true;
+		boolean swapped = false;
+		
+		//Bubble Sort
 
-
-		for (int j = 0; j < numArray.length - 1 && swapped; j++) {
+		for (int j = 0; j < numArray.length - 1; j++) {
 			swapped = false;
-			for (int i = 0; i < numArray.length - 1 - j; i++) {
-				if (numArray[i] > numArray[i + 1]) {
-					// swap
+			for (int i = 1; i < numArray.length - j; i++) {
+				if (numArray[i] < numArray[i-1]) {
+					//swap
 					int temp = numArray[i];
-					numArray[i] = numArray[i + 1];
-					numArray[i + 1] = temp;
+					numArray[i] = numArray[i-1];
+					numArray[i-1] = temp;
 					swapped = true;
 				}
 			}
-			// if (!swapped) {
-			// 	j = numArray.length; //end our loops
-			// }
+			if (!swapped) {
+				break;
+			}
 		}
-
+		
 		for (int i = 0; i < numArray.length; i++) {
 			System.out.print(numArray[i] + " ");
 		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// boolean swapped = true;
+
+
+		// for (int j = 0; j < numArray.length - 1 && swapped; j++) {
+		// 	swapped = false;
+		// 	for (int i = 0; i < numArray.length - 1 - j; i++) {
+		// 		if (numArray[i] > numArray[i + 1]) {
+		// 			// swap
+		// 			int temp = numArray[i];
+		// 			numArray[i] = numArray[i + 1];
+		// 			numArray[i + 1] = temp;
+		// 			swapped = true;
+		// 		}
+		// 	}
+		// 	// if (!swapped) {
+		// 	// 	j = numArray.length; //end our loops
+		// 	// }
+		// }
+
+		// for (int i = 0; i < numArray.length; i++) {
+		// 	System.out.print(numArray[i] + " ");
+		// }
 
 		// for (int i = 1; i < numArray.length; i++) {//how many elements at the end of
 		// the array the code ignores
