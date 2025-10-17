@@ -7,8 +7,6 @@ class Notes {
 		int numArray[] = { 54, 5, 8, 2, 54, 78, 1, 0, 54 };
 		boolean swapped = false;
 		
-		//Bubble Sort
-
 		for (int j = 0; j < numArray.length - 1; j++) {
 			swapped = false;
 			for (int i = 1; i < numArray.length - j; i++) {
